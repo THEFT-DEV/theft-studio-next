@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import { getBlogPosts } from '@/lib/content';
 
@@ -23,10 +24,13 @@ export default function BlogPage() {
         {posts.map((post) => (
           <article key={post.id} className="group">
             <Link href={`/blog/${post.slug}`}>
-              <div className="aspect-video mb-4 bg-gray-200 rounded-lg overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-gray-400">
-                  Image Placeholder
-                </div>
+              <div className="aspect-video mb-4 bg-gray-200 rounded-lg overflow-hidden relative">
+                <Image
+                  src={post.thumbnail}
+                  alt={post.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <div className="flex gap-2 mb-2">
                 {post.categories.map((cat) => (

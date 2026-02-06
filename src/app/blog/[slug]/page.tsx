@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { getBlogPosts, getBlogPostBySlug } from '@/lib/content';
 import { formatDate } from '@/lib/utils';
 import Link from 'next/link';
@@ -44,9 +45,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         ← Back to Blog
       </Link>
 
-      {/* Featured Image Placeholder */}
-      <div className="aspect-video bg-gray-200 rounded-lg mb-8 flex items-center justify-center">
-        <span className="text-gray-400">Blog Image</span>
+      {/* Featured Image */}
+      <div className="aspect-video bg-gray-200 rounded-lg mb-8 relative overflow-hidden">
+        <Image
+          src={post.thumbnail}
+          alt={post.title}
+          fill
+          className="object-cover"
+        />
       </div>
 
       {/* Meta */}

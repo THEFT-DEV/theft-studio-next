@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { getProjects, getProjectBySlug } from '@/lib/content';
 import { formatDate } from '@/lib/utils';
 import Link from 'next/link';
@@ -44,9 +45,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         ← Back to Portfolio
       </Link>
 
-      {/* Hero Image Placeholder */}
-      <div className="aspect-video bg-gray-200 rounded-lg mb-8 flex items-center justify-center">
-        <span className="text-gray-400">Project Image</span>
+      {/* Hero Image */}
+      <div className="aspect-video bg-gray-200 rounded-lg mb-8 relative overflow-hidden">
+        <Image
+          src={project.thumbnail}
+          alt={project.title}
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Meta */}
