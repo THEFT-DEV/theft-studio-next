@@ -4,43 +4,79 @@ import { Project, BlogPost } from '@/types';
 
 const contentDir = path.join(process.cwd(), 'content');
 
-// Temporary sample data until we import WordPress content
+// Real content imported from WordPress
 export function getProjects(): Project[] {
   return [
-    {
-      id: 1,
-      title: 'E-commerce Redesign',
-      slug: 'ecommerce-redesign',
-      content: '<p>Complete redesign of a modern e-commerce platform with focus on UX and conversion.</p>',
-      excerpt: 'Complete redesign of a modern e-commerce platform.',
-      date: '2025-12-15',
-      thumbnail: '/images/2025/05/theft.studio-11-2048x646.jpg',
-      categories: ['Web Design', 'E-commerce'],
-      tags: ['Figma', 'Next.js', 'Tailwind'],
-    },
-    {
-      id: 2,
-      title: 'Brand Identity System',
-      slug: 'brand-identity',
-      content: '<p>Comprehensive brand identity for a tech startup.</p>',
-      excerpt: 'Comprehensive brand identity for a tech startup.',
-      date: '2025-11-20',
-      thumbnail: '/images/2025/05/theft.studio-10-2048x646.jpg',
-      categories: ['Branding', 'Identity'],
-      tags: ['Illustrator', 'Branding'],
-    },
-    {
-      id: 3,
-      title: 'Mobile App Design',
-      slug: 'mobile-app',
-      content: '<p>User-centered mobile application design.</p>',
-      excerpt: 'User-centered mobile application design.',
-      date: '2025-10-10',
-      thumbnail: '/images/2025/05/prabu-panji-N0xIfB91Vb4-unsplash-1024x768.jpg',
-      categories: ['Mobile', 'UI/UX'],
-      tags: ['Figma', 'Mobile'],
-    },
-  ];
+  {
+    "id": 1,
+    "title": "A/B Testing Platform Design",
+    "slug": "apple",
+    "content": "<p>Project content coming soon.</p>",
+    "excerpt": "",
+    "date": "2022-12-28",
+    "thumbnail": "",
+    "categories": [
+      "Design",
+      "Research"
+    ],
+    "tags": []
+  },
+  {
+    "id": 2,
+    "title": "Online Gaming Redesign",
+    "slug": "ea-games",
+    "content": "<p>Project content coming soon.</p>",
+    "excerpt": "",
+    "date": "2022-12-28",
+    "thumbnail": "",
+    "categories": [
+      "Design",
+      "Strategy"
+    ],
+    "tags": []
+  },
+  {
+    "id": 3,
+    "title": "Brand Strategy Labs",
+    "slug": "refind",
+    "content": "<p>Project content coming soon.</p>",
+    "excerpt": "",
+    "date": "2022-12-28",
+    "thumbnail": "",
+    "categories": [
+      "Strategy"
+    ],
+    "tags": []
+  },
+  {
+    "id": 4,
+    "title": "B2C Delivery App",
+    "slug": "weedmaps",
+    "content": "<p>Project content coming soon.</p>",
+    "excerpt": "",
+    "date": "2022-12-28",
+    "thumbnail": "",
+    "categories": [
+      "Design"
+    ],
+    "tags": []
+  },
+  {
+    "id": 5,
+    "title": "Ethics in Action",
+    "slug": "ethics-in-action",
+    "content": "<p>Project content coming soon.</p>",
+    "excerpt": "",
+    "date": "2025-09-10",
+    "thumbnail": "",
+    "categories": [
+      "Design",
+      "Research",
+      "Strategy"
+    ],
+    "tags": []
+  }
+];
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
@@ -50,31 +86,145 @@ export function getProjectBySlug(slug: string): Project | undefined {
 
 export function getBlogPosts(): BlogPost[] {
   return [
-    {
-      id: 1,
-      title: 'Design Trends for 2026',
-      slug: 'design-trends-2026',
-      content: '<p>Our take on the biggest design trends shaping the industry this year.</p>',
-      excerpt: 'Our take on the biggest design trends shaping the industry.',
-      date: '2026-01-15',
-      author: 'THEFT Studio',
-      thumbnail: '/images/2025/05/theft.studio-12-2048x484.jpg',
-      categories: ['Design', 'Trends'],
-      tags: ['Design', 'Trends', '2026'],
-    },
-    {
-      id: 2,
-      title: 'The Future of Web Design',
-      slug: 'future-web-design',
-      content: '<p>How AI and new technologies are changing web design forever.</p>',
-      excerpt: 'How AI and new technologies are changing web design.',
-      date: '2026-01-10',
-      author: 'THEFT Studio',
-      thumbnail: '/images/2025/05/nurulloh-a-a-4_Ha_neGOEY-unsplash-300x200.jpg',
-      categories: ['Web Design', 'Technology'],
-      tags: ['AI', 'Web Design', 'Future'],
-    },
-  ];
+  {
+    "id": 1,
+    "title": "Start with Inclusivity, Don't End with Accessibility",
+    "slug": "theft-principle-1-starting-with-inclusivity-means-you-dont-have-to-end-with-accessibility",
+    "content": "<!-- wp:image {\"id\":120,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-semplice-img-fullwidth\"} -->\n<figure class=\"wp-block-image size-large is-style-semplice-img-fullwidth\"><img src=\"https://theft.studio/wp-content/uploads/2023/01/6-1024x576.png\" alt=\"\" class=\"wp-image-120\"/><figcaption class=\"wp-element-caption\">Start by designing for everyone.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><br>At Theft, one of our core principles is that we design for inclusivity rather than accessibility. For those working in the digital product space, granted you’ve heard the term “accessibility” tossed around. It can sometimes feel like a buzzword or a requirement imposed by larger enterprise organizations to check off a box.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3>Accessibility and inclusivity — what's the difference?</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Designing for accessibility is an important aspect of creating digital products that are usable by everyone. It involves considering the needs of users with disabilities and ensuring that the product is fully accessible to them. This can include things like adding alternative text to images for users who are blind or visually impaired, providing closed captions for users who are deaf or hard of hearing, and using clear and concise language for users with cognitive disabilities.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>While designing for accessibility is certainly important, product teams often fall into the trap of designing for accessibility <em>after</em> the product has already shipped. It can feel like putting a band-aid on a breaking dam: it's just not enough on its own. In order to truly create products that are inclusive and usable by everyone, we must first design for inclusivity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>What is inclusivity in design? <strong>Inclusive design</strong> is a design process that actively considers the needs, preferences, and experiences of a diverse group of users. This includes not just users with disabilities, but also users of different ages, genders, cultures, and socio-economic backgrounds. By designing for inclusivity, we create products that are accessible, usable, and useful for everyone.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3>There are several reasons why we believe in inclusivity first...&nbsp;</h3>\n<!-- /wp:heading -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>It's the right thing to do</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Creating products that are inclusive and accessible to everyone is not just a business or legal requirement, it's a moral imperative. By designing for inclusivity, we can create a more inclusive and equitable society for all.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>It leads to better products </h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>By considering the needs and preferences of a diverse group of users, we can create products that are more widely adopted and more highly regarded. This can lead to increased revenue and market share.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>It avoids the pitfall of designing for the \"average\" user </h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Many designers fall into the trap of designing for the \"average\" user, which often means designing for a narrow and privileged subset of the population. By designing for inclusivity, we can avoid this pitfall and create products that are truly usable by everyone.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>It's not just a nice-to-have</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>While the importance of inclusive design is often talked about in terms of its benefits for users, it's important to recognize that it also has a direct impact on a product's success. Here are just a few reasons why inclusive research and design is not only essential, but non-negotiable for the long-term success of a digital product:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol><!-- wp:list-item -->\n<li><strong>A larger user base:</strong> By considering the needs of a diverse group of users, you can potentially expand your product's user base to include people who may have otherwise been excluded due to accessibility or usability issues. This can lead to increased revenue and market share.<br></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><strong>Increased customer satisfaction:</strong> When users feel like their needs and preferences have been taken into account, they are more likely to be satisfied with the product. This can lead to increased loyalty and positive word-of-mouth promotion, which can be valuable for attracting new users.<br></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><strong>Reduced risk of legal action:</strong> Failing to consider the needs of certain groups of users, such as those with disabilities, can result in legal action for discrimination. By proactively designing for inclusion, you can avoid these types of issues and protect your product and your business.<br></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><strong>Improved team morale:</strong> Inclusive design practices can lead to a more positive and inclusive team culture, which can improve morale and lead to better collaboration and innovation.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>In short, inclusive research and design is not just a nice-to-have, it's a necessary component of creating successful digital products. By considering the needs of a diverse group of users, you can create products that are more widely adopted, more highly regarded, and less risky for your business. Ignoring the importance of inclusive design is not only a missed opportunity, it's a recipe for long-term failure.</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "We create products that are accessible, usable, and useful for everyone.",
+    "date": "2023-01-02",
+    "author": "iris.latour",
+    "thumbnail": "/images/2023/01/6-1024x576.png",
+    "categories": [
+      "Design",
+      "Research"
+    ],
+    "tags": [
+      "accessibility",
+      "inclusive design",
+      "inclusivity",
+      "theft principles"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Keep It Simple, Stupid",
+    "slug": "keep-it-simple-stupid",
+    "content": "<!-- wp:image {\"id\":130,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-semplice-img-fullwidth\"} -->\n<figure class=\"wp-block-image size-large is-style-semplice-img-fullwidth\"><img src=\"https://theft.studio/wp-content/uploads/2023/01/Untitled-design-8-1024x576.png\" alt=\"Be wary of flare and flash that camouflages bad design.\" class=\"wp-image-130\"/><figcaption class=\"wp-element-caption\">Be wary of flare and flash that camouflages bad design.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>As a design consultancy, it's tempting to want to impress clients with flashy, colorful solutions. After all, a visually striking design can grab attention and make a strong first impression. But when it comes to designing systems that serve large audiences, it's important to remember that simple is often better.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>This is why striving for simple, streamlined solutions is core to Theft’s approach to research and design.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><br><strong>One of the main benefits of a streamlined, simple design is that it's more user-friendly. </strong>When a design is cluttered and overly complex, it can be confusing and overwhelming for users. We see this too often, where teams choose to add more bells and whistles instead of focusing on underlying structural issues. This can lead to frustration and abandonment of the system. On the other hand, a simple, easy-to-use design will keep users engaged and encourage them to continue using the system.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Simplicity is also important for accessibility.</strong> When a design is cluttered and complex, it can be difficult for users with disabilities to navigate and use the system. By keeping the design simple and straightforward, it becomes more accessible to a wider range of users.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>Simple designs are simply more scalable. </strong>When a system is designed to handle a large number of unnecessary additions, it's important to consider how it will perform under heavy usage. A complex design with many interconnected parts is more prone to breaking and experiencing performance issues. A simple design, on the other hand, is more likely to be able to handle the increased usage without problems.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Of course, this isn't to say that all design should be devoid of creativity or visual appeal. </h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><br>But it's important to strike a balance and prioritize user experience and functionality over flashiness. By keeping it streamlined and simple, design consultancies can serve their clients much more effectively, especially when designing systems that serve large audiences.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>At Theft, we pride ourselves in our systems thinking, or 'systems design'. This is the process of creating and organizing the components of a system to achieve a specific goal. It involves finding simple solutions to complex problems by breaking them down into smaller, more manageable pieces and then creating a plan to bring those pieces together.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>One of the key principles of systems design is — you guessed it — the idea of simplicity. </h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><br>There are several ways to find simple solutions to complex problems in systems design. One approach is to start by defining the problem clearly and understanding the needs and constraints of the system. This helps to identify the key elements that need to be included in the solution and allows designers to focus on those elements rather than getting bogged down in unnecessary details.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Another important aspect of systems design is modularity. Modular systems are made up of smaller, independent components that can be easily replaced or updated without affecting the overall system. This makes it easier to maintain and modify the system over time, as well as to scale it up or down as needed.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Ultimately, the goal of systems design is to create solutions that are efficient, effective, and easy to use. By finding simple solutions to complex problems, designers can create systems that are robust, scalable, and able to meet the changing needs of users. Ergo: keepin' it simple!</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "Be wary of flare and flash that camouflages bad design.",
+    "date": "2023-01-02",
+    "author": "iris.latour",
+    "thumbnail": "/images/2023/01/Untitled-design-8-1024x576.png",
+    "categories": [
+      "Design",
+      "Research",
+      "Strategy"
+    ],
+    "tags": [
+      "complex",
+      "simplicity",
+      "systems",
+      "systems design",
+      "theft principles"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Power to Pareto",
+    "slug": "power-to-pareto",
+    "content": "<!-- wp:image {\"id\":134,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"style\":{\"color\":{}},\"className\":\"is-style-semplice-img-fullwidth\"} -->\n<figure class=\"wp-block-image size-large is-style-semplice-img-fullwidth\"><img src=\"https://theft.studio/wp-content/uploads/2023/01/Untitled-design-6-1024x576.png\" alt=\"\" class=\"wp-image-134\"/><figcaption class=\"wp-element-caption\">When maximizing 20% of the effort into 80% of the outcomes.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><br>Theft believes in the power of the Pareto principle, also known as the 80/20 rule, when serving our clients. This principle, named after Italian economist Vilfredo Pareto, states that roughly 80% of effects come from 20% of the causes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the context of our work, this means that we prioritize the most impactful and important tasks and work to ensure that they are completed efficiently and effectively. By focusing on the 20% of tasks that will have the greatest impact on the project's success, we can help our clients achieve their goals in the most efficient and cost-effective way possible.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Pinpointing solutions for clients</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>One of the key ways we apply the Pareto principle is by carefully analyzing and understanding our clients' needs and priorities. We work closely with them to identify the most important aspects of the project and focus our efforts on delivering the best possible results in those areas.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Streamlining our processes</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Another way we utilize the Pareto principle is by constantly seeking out ways to streamline and optimize our processes. We believe that by continually refining and improving our methods, we can deliver the best possible value to our clients while also reducing waste and inefficiencies.<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Applying it to all Theft offerings</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The Pareto principle comes to play not only in how we run our firm and serve our clients, but it is a powerful tool that can be applied to each one of our crafts: UX research, product design, and business strategy. Leveraging this principle across each of our offerings is what consistently sets us apart from our competitors.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>In UX research, the Pareto principle can help prioritize the most important user needs and behaviors. By focusing on the 20% of features that will have the greatest impact on user satisfaction and engagement, designers and researchers can create more effective and impactful designs. For example, a UX researcher might use the Pareto principle to identify the most common problems users encounter while using a product, and then focus on designing solutions for those problems first.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>In product design, the Pareto principle can help prioritize features and functionality. By focusing on the 20% of features that will have the greatest impact on a product's success, designers can create more effective and user-friendly products. For example, a product designer might use the Pareto principle to identify the most important features for a new smartphone, and then focus on designing and refining those features before moving on to less important ones.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>In business strategy, the Pareto principle can help organizations focus on the most important goals and objectives. By identifying the 20% of activities that will have the greatest impact on a company's success, business leaders can create more effective and efficient strategies. For example, a company might use the Pareto principle to identify the most important markets to target, or the most impactful actions to take in order to achieve their goals.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p><br>Overall, the Pareto principle is an important tool that can help organizations focus on the most impactful tasks and activities, and create more effective and efficient strategies. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>By applying the Pareto principle in UX research, product design, and business strategy, organizations can achieve their goals more efficiently and effectively.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>It helps us deliver exceptional results for our clients while also maximizing our own efficiency and effectiveness. By focusing on the most important tasks and continuously seeking ways to improve, we are able to help our clients succeed in their own endeavors.</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "How Theft leverages the Pareto principle to optimize for our clients.",
+    "date": "2023-01-02",
+    "author": "jason",
+    "thumbnail": "/images/2023/01/Untitled-design-6-1024x576.png",
+    "categories": [
+      "Design",
+      "Research",
+      "Strategy"
+    ],
+    "tags": [
+      "efficiency",
+      "effort",
+      "impact",
+      "optimizing",
+      "pareto"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Looking Forward and Looking Back",
+    "slug": "the-power-of-january",
+    "content": "<!-- wp:image {\"id\":176,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-semplice-img-fullwidth\"} -->\n<figure class=\"wp-block-image size-large is-style-semplice-img-fullwidth\"><img src=\"https://theft.studio/wp-content/uploads/2023/01/Untitled-design-12-1024x576.png\" alt=\"\" class=\"wp-image-176\"/><figcaption class=\"wp-element-caption\">Roman god looking forward into the future.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">As the January is named after the Roman god of transitions, Janus, a unique deity who was often depicted with two faces, one looking forward and the other looking backward. This duality was symbolic of the god's ability to see both the past and the future, and to guide people through the transitions of life.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>The implications for design</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">As designers, we can learn a lot from Janus and his ability to look both forward and backward. The UX design process is all about looking ahead to understand what users need and want, and then iterating backward to make sure that those needs are met in the most effective and efficient way possible.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Ideation workshops are a valuable tool for any design process, as they help teams to generate and explore new ideas without fear of judgment or criticism. By getting all of their ideas out of their heads and onto the table, team members are able to see the bigger picture and consider a wide range of possibilities.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">One of the key benefits of ideation workshops is that they allow teams to jump ahead in the design process. Rather than spending a lot of time on a single idea that may not pan out, teams can quickly generate and evaluate a large number of options, ultimately arriving at the best solution more quickly.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Another important aspect of ideation workshops is that they encourage a culture of open-mindedness and creativity. By establishing a safe space where team members can share their ideas without fear of rejection, teams are able to think more freely and come up with truly innovative solutions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">One key aspect of this process is the use of retrospectives, which are regular review sessions where designers look back at their work and reflect on what went well, what could have been done better, and what they can learn from the experience. These retrospectives allow designers to incorporate lessons learned into their future work, ensuring that each project is a little bit better than the last.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>The implications for Theft</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">At our design firm, we believe that it's important to take our clients along on the journey with us. This means not only working closely with them to understand their needs and goals, but also helping them to look forward with inspiration and look backward with learning.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">One way we do this is by sharing our process and approach with our clients. We believe that it's important for them to understand how we work and the considerations that go into our designs, so that they can feel confident in the decisions we make and the direction we're heading.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">We also like to involve our clients in the ideation and exploration phase of the design process. This can be as simple as sharing early sketches or prototypes with them for feedback, or even inviting them to participate in ideation workshops alongside our design team. By involving them in this way, we can help our clients to see the possibilities and opportunities that lie ahead, and get them excited about the journey to come.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">At the same time, we also encourage our clients to look backward and reflect on their experiences. This might involve conducting regular retrospectives to review what has worked well and what could be improved, or simply engaging in ongoing dialogue about the design process and how it's evolving. By looking back and learning from our experiences, we can continually improve and refine our designs, and better meet the needs of our clients.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">By taking a holistic view of our work and learning from the past, we can create better designs and create a better future for all of us. By working together and sharing in the process, we can create designs that truly meet the needs of our clients.</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "Janus is a unique deity who was often depicted with two faces, one looking forward and the other looking backward. ",
+    "date": "2023-01-28",
+    "author": "iris.latour",
+    "thumbnail": "/images/2023/01/Untitled-design-12-1024x576.png",
+    "categories": [
+      "Strategy"
+    ],
+    "tags": [
+      "effort",
+      "ideation",
+      "impact",
+      "retrospectives"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Design Heuristics as a Framework for Inclusivity",
+    "slug": "10-heuristics-and-inclusive-design",
+    "content": "<!-- wp:image {\"id\":197,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://theft.studio/wp-content/uploads/2023/03/Untitled-design-17-1024x576.png\" alt=\"\" class=\"wp-image-197\"/><figcaption class=\"wp-element-caption\">Child playing with blocks</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3>The building blocks of an inclusive world</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Design is an essential part of our lives. From the objects we use daily to the websites we visit, everything has been designed with a specific purpose in mind. However, it's not always easy to create something that works for everyone. Inclusive design is a process that aims to create products, systems, and experiences that are accessible to all users, regardless of their abilities or disabilities.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Inclusive design is important because it allows more people to participate fully in society and to access the same opportunities and resources as everyone else. When designers consider inclusivity in their design process, they create products that are not only accessible but also more usable and enjoyable for everyone.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The 10 heuristics of design provide a framework for inclusive design. By considering these heuristics when designing products, systems, and experiences, designers can create interfaces that are easier to use and more accessible to everyone, regardless of their abilities.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol><!-- wp:list-item -->\n<li><strong>Visibility of system status</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The visibility of system status is an essential heuristic for inclusive design. It means that users should always be aware of what is happening and what is expected of them. For example, when filling out a form, users should be able to see which fields are required and which are optional. This makes it easier for users with disabilities such as visual impairments to understand what is needed of them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":2} -->\n<ol start=\"2\"><!-- wp:list-item -->\n<li><strong>Match between system and the real world</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The match between the system and the real world is another crucial heuristic for inclusive design. It means that the design of the system should reflect the way users think and work. For example, if a website uses icons to represent different functions, the icons should be easy to understand and match the user's mental model. This is especially important for users with cognitive disabilities, who may have difficulty understanding abstract concepts.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":3} -->\n<ol start=\"3\"><!-- wp:list-item -->\n<li><strong>User control and freedom</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>User control and freedom is a heuristic that refers to the ability of users to undo and redo actions. This is important for inclusive design because it allows users with disabilities such as motor impairments to correct mistakes or change their minds without having to start over. For example, a user with a tremor may accidentally click on the wrong button and need to undo their action.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":4} -->\n<ol start=\"4\"><!-- wp:list-item -->\n<li><strong>Consistency and standards</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Consistency and standards are essential heuristics for inclusive design. They refer to the use of consistent design elements and interactions across different products and systems. This is important for users with disabilities such as learning disabilities, who may have difficulty adapting to new or unfamiliar interfaces. Consistency and standards can also help users with visual impairments, who may rely on consistent navigation elements to find their way around a website.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":5} -->\n<ol start=\"5\"><!-- wp:list-item -->\n<li><strong>Error prevention</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Error prevention is a heuristic that aims to reduce the likelihood of errors occurring in the first place. This is important for inclusive design because it can help users with disabilities such as cognitive impairments or ADHD, who may have difficulty staying focused or remembering instructions. For example, a website could use clear and simple language to explain what is needed from the user, reducing the chance of confusion or mistakes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":6} -->\n<ol start=\"6\"><!-- wp:list-item -->\n<li><strong>Recognition rather than recall</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Recognition rather than recall is a heuristic that refers to the design of interfaces that make it easier for users to recognize what they need to do, rather than requiring them to remember. This is important for inclusive design because it can help users with disabilities such as memory impairments or ADHD, who may have difficulty remembering complex instructions or sequences. For example, a website could use visual cues such as color or icons to help users recognize different functions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":7} -->\n<ol start=\"7\"><!-- wp:list-item -->\n<li><strong>Flexibility and efficiency of use</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Flexibility and efficiency of use is a heuristic that refers to the ability of users to adapt the system to their needs and to perform tasks quickly. This is important for inclusive design because it can help users with disabilities such as motor impairments, who may need more time or assistance to perform tasks. For example, a website could offer different input methods, such as voice recognition or keyboard shortcuts, to allow users to choose the method that works best for them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":8} -->\n<ol start=\"8\"><!-- wp:list-item -->\n<li><strong>Aesthetic and minimalist design</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Aesthetic and minimalist design is a heuristic that refers to the use of simple and elegant design elements. This is important for inclusive design because it can help users with disabilities such as sensory processing issues, who may become overwhelmed by cluttered or busy designs. For example, a website could use a simple and clean layout with minimal distractions to help users stay focused on the task at hand.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":9} -->\n<ol start=\"9\"><!-- wp:list-item -->\n<li><strong>Help users recognize, diagnose, and recover from errors</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Helping users recognize, diagnose, and recover from errors is a heuristic that aims to make it easier for users to recover from mistakes. This is important for inclusive design because it can help users with disabilities such as cognitive impairments or motor impairments, who may have difficulty correcting mistakes or recovering from errors. For example, a website could use clear error messages and offer suggestions for how to correct the mistake.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list {\"ordered\":true,\"start\":10} -->\n<ol start=\"10\"><!-- wp:list-item -->\n<li><strong>Help and documentation</strong></li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Help and documentation is a heuristic that refers to the use of clear and concise documentation to help users understand how to use a product or system. This is important for inclusive design because it can help users with disabilities such as cognitive impairments, who may need additional guidance to understand how to use a product or system. For example, a website could offer clear and concise instructions for how to perform specific tasks or use certain features.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Design is an essential part of our lives, and inclusivity in design is critical for creating products, systems, and experiences that are accessible to all users. The 10 heuristics of design provide a framework for inclusive design, and by considering these heuristics, designers can create interfaces that are easier to use and more accessible to everyone.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Inclusive design is not only the right thing to do, but it also makes good business sense. By creating products that are accessible to everyone, designers can tap into new markets and reach more users. Inclusive design is a win-win for everyone, and it's up to designers to make it a priority in their work.</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "How the team at Theft leverages the 10 heuristics of design to provide a framework for inclusive design.",
+    "date": "2023-03-06",
+    "author": "jason",
+    "thumbnail": "/images/2023/03/Untitled-design-17-1024x576.png",
+    "categories": [
+      "Design"
+    ],
+    "tags": [
+      "impact",
+      "inclusive design",
+      "simplicity"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "There's No \"I\" in Research",
+    "slug": "no-i-in-research",
+    "content": "<!-- wp:image {\"id\":208,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-semplice-img-fullwidth\"} -->\n<figure class=\"wp-block-image size-large is-style-semplice-img-fullwidth\"><img src=\"https://theft.studio/wp-content/uploads/2023/03/Untitled-design-18-1024x576.png\" alt=\"\" class=\"wp-image-208\"/><figcaption class=\"wp-element-caption\">Team discussion: two men and three women sitting and standing around a large table.</figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>In today's rapidly changing business landscape, companies are turning to research to make informed decisions about their products and services. However, the effectiveness of research is often limited by a lack of inclusion of teams in the research process. Theft has worked with cross-functional product teams at startups, large enterprises, and fast-moving technology giants, and we've seen first-hand the value of including teams in the research process. In this article, we will explore why including teams in the research process is so important and why it is particularly vital when running a consultancy.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\"><strong>The Value of Including Teams in the Research Process</strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>When conducting research, it is essential to include teams in the process because they bring a unique perspective to the table. Teams often have a deep understanding of the company's goals, the industry, and the customers. This understanding can help ensure that the research is relevant and meaningful. Additionally, including teams in the research process can help create buy-in for the findings and recommendations that emerge from the research. By involving teams in the research process, they feel like they are part of the solution and are more likely to support the implementation of the research findings.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>At Google, for example, the company is known for its emphasis on data-driven decision making. However, the company also recognizes that data alone is not enough to make the best decisions. Therefore, Google includes teams in the research process to ensure that data is being used effectively to inform decisions. At Apple, the company's design process is focused on the user experience. To ensure that the user experience is top-notch, Apple includes teams in the research process to gather insights into how users interact with products.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Including teams in the research process also helps ensure that the research is being conducted in a collaborative and iterative manner. By involving teams in the research process, researchers can gather feedback on their work and make adjustments as needed. This approach can lead to better research outcomes and more effective solutions. Moreover, including teams in the research process helps to foster a culture of continuous improvement. By collaborating with teams and soliciting their input, researchers can identify areas for improvement and work towards optimizing the research process.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\"><strong>Active Listening and Being Included in the Planning Process</strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>One of the key benefits of including teams in the research process is the power of active listening. Active listening involves paying close attention to what someone is saying, and demonstrating that you are listening by asking questions and reflecting back what you hear. Active listening is critical during the research process because it helps researchers understand the perspectives and needs of different stakeholders.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>By including teams in the planning process, researchers can use active listening to gather insights and feedback on the research plan. This can help to ensure that the research objectives align with the company's goals and that the research methods are appropriate for the problem at hand. Moreover, including teams in the planning process can help to build trust and collaboration between researchers and stakeholders.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For example, when working with a e-commerce AI startup, Theft included the product development team in the planning process for a customer research project. During the planning phase, we used active listening to gather feedback on the research plan and to understand the team's priorities and goals. By including the team in the planning process, we were able to develop a research plan that was relevant and meaningful for the company, which helped to build trust and collaboration between the team and the research team.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\"><strong>The Importance of Involvement for Long-Term Solutions</strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Another key benefit of including teams in the research process is that it can lead to more effective and long-term solutions. By involving teams in the research process, they are more likely to take ownership of the research findings and recommendations. This ownership can lead to a greater sense of accountability and a greater commitment to implementing the recommendations.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For example, when working with Overstock.com, we included a cross-functional team in the research process for a customer satisfaction study. The team included representatives from customer service, product development, and marketing. By involving the team in the research process, they were able to take ownership of the research findings and recommendations. This ownership led to a greater commitment to improving the customer experience, which resulted in long-term improvements in customer satisfaction.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\"><strong>The Power of Collaboration in Consultancy</strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>In the consultancy world, including teams in the research process is particularly important. Consultancies often work with companies on short-term projects, and including teams in the research process can help to ensure that the solutions developed are sustainable and effective over the long-term.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our most recent project, working with a consultancy that specialized in UX research, we included a cross-functional team in the research process for a redesign of a mobile application. The team included representatives from product development, design, and customer service. By involving the team in the research process, we were able to gather insights and feedback from a variety of stakeholders, which helped to inform the redesign of the mobile application. Moreover, including the team in the research process helped to build buy-in and ownership of the redesign, which led to a more effective and sustainable solution.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">What does this mean for you?</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Including teams in the research process is critical for developing effective solutions that are sustainable over the long-term. Including teams in the research process helps to ensure that the research is relevant and meaningful, and that the research methods are appropriate for the problem at hand. Additionally, including teams in the research process can help to build trust and collaboration between researchers and stakeholders. By actively listening to teams and including them in the planning process, researchers can gather insights and feedback that can inform the research process and improve the quality of the research outcomes. In the consultancy world, including teams in the research process is particularly important for developing sustainable and effective solutions. Therefore, if you are conducting research, it is essential to include teams in the process to ensure that you are able to develop effective and sustainable solutions over the long-term.</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "Why it's important to run research as a team, especially with clients and cross-functional stakeholders.",
+    "date": "2023-03-16",
+    "author": "iris.latour",
+    "thumbnail": "/images/2023/03/Untitled-design-18-1024x576.png",
+    "categories": [
+      "Research"
+    ],
+    "tags": [
+      "AI",
+      "enterprise",
+      "inclusive research",
+      "startups"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "AI for UX Design: It's Complicated, But Worth It",
+    "slug": "ai-for-ux-design-its-complicated-but-worth-it",
+    "content": "<!-- wp:image {\"id\":215,\"sizeSlug\":\"large\",\"linkDestination\":\"none\",\"className\":\"is-style-semplice-img-fullwidth\"} -->\n<figure class=\"wp-block-image size-large is-style-semplice-img-fullwidth\"><img src=\"https://theft.studio/wp-content/uploads/2023/04/Untitled-design-1024x576.png\" alt=\"A robot hand and human hand reach out to touch one another.\" class=\"wp-image-215\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>As a UX Design Director for a research and design agency, I have seen the benefits that AI can bring to our work. However, I also understand that some people are hesitant to embrace this technology. In this article, I will address why people shouldn't be afraid of AI, but also why caution is needed when using it in research and design.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Proceeding with Caution</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Firstly, it's important to recognize that AI is not some all-powerful, all-knowing being that will take over the world. It's simply a tool that can assist us in analyzing and interpreting data. When used correctly, AI can help us save time and resources by automating repetitive tasks and providing us with insights that might not be immediately apparent. For example, AI can be used to analyze large sets of user data to identify patterns and trends that might otherwise be difficult to spot.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>However, as with any tool, there are potential dangers that come with using AI. One of the biggest dangers is that it can't replace the human touch in UX research and design. AI may be able to identify patterns and trends, but it can't understand the nuances of human behavior and emotion. This is why it's essential to supplement AI with other research methods, such as talking to real users and observing their behavior in real-world settings.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Another potential danger of using AI is that it can perpetuate bias if not used correctly. If the data used to train an AI model is biased, then the model will also be biased. This can lead to incorrect conclusions and decisions that may harm users. It's important to ensure that the data used to train AI models is diverse and representative of the user base.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Finally, there is the danger of overreliance on AI. It's essential to remember that AI is just a tool and that human judgment is still required. AI should be used to assist us in making decisions, not make decisions for us. It's crucial to maintain a balance between AI and human input to ensure that the decisions made are based on a holistic understanding of the problem.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Acknowledging the Benefits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Despite these potential dangers, I believe that the benefits of using AI in research and design far outweigh the risks. For example, AI can be used to analyze large sets of data quickly and efficiently, allowing us to identify trends and patterns that might be difficult to see otherwise. This can help us to make informed decisions and improve the user experience.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>AI can also help to automate repetitive tasks, freeing up time for UX researchers and designers to focus on more complex tasks that require human input. This can lead to more efficient use of time and resources and can ultimately result in better outcomes for the user.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition to these benefits, AI can also help to improve accessibility in UX design. For example, AI-powered chatbots can assist users with disabilities in navigating websites and accessing information. This can help to make the user experience more inclusive and accessible to everyone.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>However, it's important to remember that AI is not a silver bullet. It's not a replacement for human input and judgment, and it's not a substitute for talking to real users. AI should be used to complement other research methods, not replace them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">So... What's the Deal?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>In conclusion, people should not be afraid of AI, but they should exercise caution when using it in research and design. AI can bring significant benefits to our work, but it's essential to remember that it's just a tool and that human input and judgment are still required. To use AI effectively, we need to balance its use with other research methods, ensure that the data used to train AI models is diverse and representative, and maintain a healthy skepticism of its capabilities. By doing so, we can harness the power of AI to improve the user experience and create better products and services for everyone.</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "We've moved past the stage of wondering whether AI is friend or foe? This article explores why you shouldn't be afraid, but definitely skeptical when adopting AI-driven tools for your UX practice.",
+    "date": "2023-04-28",
+    "author": "jason",
+    "thumbnail": "/images/2023/04/Untitled-design-1024x576.png",
+    "categories": [
+      "Design"
+    ],
+    "tags": [
+      "AI",
+      "future",
+      "tools"
+    ]
+  }
+];
 }
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
