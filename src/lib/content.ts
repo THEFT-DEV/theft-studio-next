@@ -11,10 +11,10 @@ export function getProjects(): Project[] {
     "id": 1,
     "title": "A/B Testing Platform Design",
     "slug": "apple",
-    "content": "<p>Project content coming soon.</p>",
-    "excerpt": "",
+    "content": "<h2>A/B Testing Platform Design</h2><p>Comprehensive A/B testing platform design for a major technology company, focusing on user experience research and data-driven design decisions.</p><p><strong>Role:</strong> Lead UX Designer & Researcher</p><p><strong>Key Deliverables:</strong></p><ul><li>User research and testing protocols</li><li>Platform interface design</li><li>Data visualization components</li><li>Comprehensive design system</li></ul>",
+    "excerpt": "Comprehensive A/B testing platform design for a major technology company.",
     "date": "2022-12-28",
-    "thumbnail": "",
+    "thumbnail": "/images/2023/01/5-2.png",
     "categories": [
       "Design",
       "Research"
@@ -25,10 +25,10 @@ export function getProjects(): Project[] {
     "id": 2,
     "title": "Online Gaming Redesign",
     "slug": "ea-games",
-    "content": "<p>Project content coming soon.</p>",
-    "excerpt": "",
+    "content": "<h2>Online Gaming Platform Redesign</h2><p>Complete redesign of online gaming experience focusing on user engagement and streamlined gameplay.</p><p><strong>Client:</strong> Major Gaming Company</p><p><strong>Scope:</strong></p><ul><li>User experience research with gamers</li><li>Interface redesign and prototyping</li><li>Usability testing and iteration</li><li>Design system implementation</li></ul>",
+    "excerpt": "Complete redesign of online gaming experience focusing on user engagement.",
     "date": "2022-12-28",
-    "thumbnail": "",
+    "thumbnail": "/images/2023/01/Untitled-design-8-1024x576.png",
     "categories": [
       "Design",
       "Strategy"
