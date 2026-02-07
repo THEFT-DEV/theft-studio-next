@@ -47,13 +47,19 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       {/* Hero Image */}
       <div className="aspect-video bg-gray-200 rounded-lg mb-8 relative overflow-hidden">
-        <Image
-          src={project.thumbnail}
-          alt={project.title}
-          fill
-          className="object-cover"
-          priority
-        />
+        {project.thumbnail ? (
+          <Image
+            src={project.thumbnail}
+            alt={project.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-gray-400 text-2xl font-medium">
+            {project.title}
+          </div>
+        )}
       </div>
 
       {/* Meta */}
