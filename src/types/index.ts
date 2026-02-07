@@ -8,6 +8,7 @@ export interface Project {
   thumbnail: string;
   categories: string[];
   tags: string[];
+  images?: string[];
   sempliceContent?: any;
 }
 
