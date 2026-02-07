@@ -24,12 +24,18 @@ export default function PortfolioPage() {
           <article key={project.id} className="group">
             <Link href={`/portfolio/${project.slug}`}>
               <div className="aspect-[4/3] mb-4 bg-gray-200 rounded-lg overflow-hidden relative">
-                <Image
-                  src={project.thumbnail}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                {project.thumbnail ? (
+                  <Image
+                    src={project.thumbnail}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-400">
+                    {project.title}
+                  </div>
+                )}
               </div>
               <h2 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
                 {project.title}
