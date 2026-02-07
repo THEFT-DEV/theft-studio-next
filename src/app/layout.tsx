@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased flex flex-col min-h-screen font-mono" suppressHydrationWarning>
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main className="flex-1" style={{ paddingTop: '25px' }}>{children}</main>
         <Footer />
       </body>
     </html>

@@ -2,97 +2,91 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'About - THEFT Studio',
-  description: 'Award-winning design agency specializing in digital experiences, branding, and web design. Learn about our approach and expertise.',
+  description: 'A research and design studio focused on creating meaningful, accessible, and beautiful products.',
 };
 
 export default function AboutPage() {
   const services = [
     {
-      title: 'Web Design & Development',
-      description: 'Custom websites built with modern technologies like Next.js, React, and TypeScript.',
+      title: 'UX RESEARCH',
+      description: 'Comprehensive user research and testing to inform design decisions with real insights.',
     },
     {
-      title: 'Brand Identity & Strategy',
-      description: 'Complete brand systems from logo design to brand guidelines and visual identity.',
+      title: 'PRODUCT DESIGN',
+      description: 'Thoughtful interface design that prioritizes usability, accessibility, and elegance.',
     },
     {
-      title: 'UI/UX Design',
-      description: 'User-centered design that prioritizes usability and creates delightful experiences.',
+      title: 'DESIGN SYSTEMS',
+      description: 'Scalable design systems that maintain consistency while enabling creativity.',
     },
     {
-      title: 'Digital Strategy',
-      description: 'Strategic planning and consulting to elevate your digital presence.',
+      title: 'STRATEGIC CONSULTING',
+      description: 'Strategic planning and design thinking to solve complex product challenges.',
     },
-  ];
-
-  const stats = [
-    { label: 'Projects Delivered', value: '100+' },
-    { label: 'Years Experience', value: '10+' },
-    { label: 'Happy Clients', value: '50+' },
-    { label: 'Design Awards', value: '15+' },
   ];
 
   return (
-    <div>
+    <div className="min-h-screen">
       {/* Hero */}
-      <section className="container mx-auto px-4 py-16 max-w-4xl">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">About THEFT Studio</h1>
-        <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-          We are an award-winning design agency specializing in creating
-          exceptional digital experiences. Our team combines strategic thinking
-          with creative excellence to deliver work that not only looks beautiful
-          but drives real results.
-        </p>
-      </section>
-
-      {/* Stats */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+      <section className="max-w-container mx-auto px-grid-4 md:px-grid-8 py-grid-8 md:py-grid-12">
+        <div className="max-w-4xl">
+          <h1 className="text-display-md md:text-display-lg mb-grid-4">
+            ABOUT
+          </h1>
+          <div className="divider-solid mb-grid-6"></div>
+          <p className="text-headline-lg mb-grid-6">
+            WE ARE A RESEARCH AND DESIGN STUDIO FOCUSED ON CREATING MEANINGFUL,
+            ACCESSIBLE, AND BEAUTIFUL DIGITAL PRODUCTS.
+          </p>
+          <p className="text-headline-lg opacity-70">
+            OUR PRACTICE IS BUILT ON INCLUSIVE DESIGN PRINCIPLES, SYSTEMS THINKING,
+            AND A COMMITMENT TO UNDERSTANDING THE PEOPLE WE DESIGN FOR. WE BELIEVE
+            GREAT DESIGN STARTS WITH GREAT RESEARCH.
+          </p>
         </div>
       </section>
 
       {/* Approach */}
-      <section className="container mx-auto px-4 py-16 max-w-4xl">
-        <h2 className="text-4xl font-bold mb-8">Our Approach</h2>
-        <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-          <p>
-            We believe in creating meaningful digital experiences that connect
-            brands with their audiences. Our process is collaborative,
-            user-centered, and driven by a passion for exceptional design.
-          </p>
-          <p>
-            Every project begins with understanding your goals, audience, and
-            challenges. We then craft solutions that are not only visually
-            stunning but strategically sound and technically excellent.
-          </p>
-          <p>
-            Our team stays on the cutting edge of design and technology trends,
-            ensuring your brand remains relevant and competitive in an
-            ever-evolving digital landscape.
-          </p>
+      <section className="max-w-container mx-auto px-grid-4 md:px-grid-8 py-grid-8 md:py-grid-12 border-t border-border">
+        <div className="max-w-4xl">
+          <h2 className="text-display-md mb-grid-6">
+            OUR APPROACH
+          </h2>
+          <div className="space-y-grid-6 text-body opacity-70">
+            <p>
+              We start with inclusivity rather than accessibility. By designing
+              for diverse needs from the beginning, we create products that work
+              better for everyone.
+            </p>
+            <p>
+              Simplicity is at the core of our work. We believe in finding elegant
+              solutions to complex problems through systems thinking and careful
+              reduction.
+            </p>
+            <p>
+              The Pareto principle guides our practice. We focus on the 20% of
+              work that creates 80% of the impact, ensuring efficient and
+              effective outcomes for our clients.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Services */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-4xl font-bold mb-12">What We Do</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+      <section className="max-w-container mx-auto px-grid-4 md:px-grid-8 py-grid-8 md:py-grid-12 border-t border-border">
+        <div className="max-w-4xl">
+          <h2 className="text-display-md mb-grid-8">
+            WHAT WE DO
+          </h2>
+          <div className="grid md:grid-cols-2 gap-grid-6">
             {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-white p-6 rounded-lg border border-gray-200"
-              >
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+              <div key={service.title} className="border-l border-border pl-grid-4">
+                <h3 className="text-headline-lg mb-grid-3">
+                  {service.title}
+                </h3>
+                <p className="text-body opacity-70">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
@@ -100,20 +94,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-4 py-16 max-w-4xl">
-        <div className="bg-black text-white rounded-2xl p-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Let's Work Together
+      <section className="max-w-container mx-auto px-grid-4 md:px-grid-8 py-grid-12 md:py-grid-16 border-t border-border">
+        <div className="max-w-3xl">
+          <h2 className="text-display-md md:text-display-lg mb-grid-6">
+            LET'S CREATE SOMETHING MEANINGFUL TOGETHER.
           </h2>
-          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-            Ready to start your next project? Get in touch and let's create
-            something extraordinary.
-          </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-3 bg-white text-black rounded-lg hover:bg-gray-100 transition-colors font-medium"
+            className="link-arrow inline-flex"
           >
-            Start a Conversation
+            START A CONVERSATION
+            <span className="arrow">→</span>
           </Link>
         </div>
       </section>

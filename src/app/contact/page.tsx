@@ -47,93 +47,121 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-2xl">
-      <h1 className="text-5xl font-bold mb-8">Get in Touch</h1>
-
-      <p className="text-xl text-gray-600 mb-12">
-        Have a project in mind? Let's talk about how we can help bring your
-        vision to life.
-      </p>
-
-      {status === 'success' && (
-        <div className="mb-8 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
-          <p className="font-medium">Thank you for your message!</p>
-          <p className="text-sm mt-1">We'll get back to you as soon as possible.</p>
+    <div className="min-h-screen">
+      <section className="max-w-container mx-auto px-grid-4 md:px-grid-8 py-grid-8 md:py-grid-12 max-w-3xl">
+        <div className="mb-grid-8 md:mb-grid-12">
+          <h1 className="text-display-md md:text-display-lg mb-grid-4">
+            CONTACT
+          </h1>
+          <div className="divider-solid mb-grid-6"></div>
+          <p className="text-headline-lg opacity-70">
+            HAVE A PROJECT IN MIND? LET'S DISCUSS HOW WE CAN HELP BRING YOUR
+            VISION TO LIFE THROUGH THOUGHTFUL RESEARCH AND DESIGN.
+          </p>
         </div>
-      )}
 
-      {status === 'error' && (
-        <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
-          <p className="font-medium">Oops! Something went wrong.</p>
-          <p className="text-sm mt-1">{errorMessage}</p>
-        </div>
-      )}
+        {status === 'success' && (
+          <div className="mb-grid-6 p-grid-4 border border-border bg-muted">
+            <p className="text-button mb-grid-1">THANK YOU FOR YOUR MESSAGE.</p>
+            <p className="text-body opacity-70">
+              We'll get back to you as soon as possible.
+            </p>
+          </div>
+        )}
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2">
-            Name *
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none"
-            required
+        {status === 'error' && (
+          <div className="mb-grid-6 p-grid-4 border border-destructive bg-destructive/10">
+            <p className="text-button mb-grid-1 text-destructive-foreground">
+              SOMETHING WENT WRONG.
+            </p>
+            <p className="text-body text-destructive-foreground opacity-70">{errorMessage}</p>
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} className="space-y-grid-6">
+          <div>
+            <label
+              htmlFor="name"
+              className="block text-label mb-grid-2"
+            >
+              NAME *
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="input-field w-full"
+              required
+              disabled={status === 'loading'}
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-label mb-grid-2"
+            >
+              EMAIL *
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="input-field w-full"
+              required
+              disabled={status === 'loading'}
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="message"
+              className="block text-label mb-grid-2"
+            >
+              MESSAGE *
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={6}
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full px-grid-2 py-grid-2 border border-border bg-transparent font-mono text-body resize-none transition-border-color duration-150 focus:outline-none focus:border-foreground"
+              required
+              disabled={status === 'loading'}
+            />
+          </div>
+
+          <button
+            type="submit"
             disabled={status === 'loading'}
-          />
-        </div>
+            className="btn-primary disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            {status === 'loading' ? 'SENDING...' : 'SEND MESSAGE'}
+          </button>
+        </form>
 
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-2">
-            Email *
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none"
-            required
-            disabled={status === 'loading'}
-          />
+        <div className="mt-grid-8 pt-grid-6 border-t border-border">
+          <h2 className="text-headline-lg mb-grid-4">
+            OTHER WAYS TO REACH US
+          </h2>
+          <div className="space-y-grid-2 text-body opacity-70">
+            <p>
+              EMAIL:{' '}
+              <a
+                href="mailto:hello@theft.studio"
+                className="border-b border-transparent hover:border-foreground transition-border-color duration-150"
+              >
+                hello@theft.studio
+              </a>
+            </p>
+          </div>
         </div>
-
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium mb-2">
-            Message *
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows={6}
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none resize-none"
-            required
-            disabled={status === 'loading'}
-          />
-        </div>
-
-        <button
-          type="submit"
-          disabled={status === 'loading'}
-          className="px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
-        >
-          {status === 'loading' ? 'Sending...' : 'Send Message'}
-        </button>
-      </form>
-
-      <div className="mt-12 pt-8 border-t border-gray-200">
-        <h2 className="text-2xl font-bold mb-4">Other Ways to Reach Us</h2>
-        <div className="space-y-2 text-gray-600">
-          <p>Email: <a href="mailto:hello@theft.studio" className="text-black hover:underline">hello@theft.studio</a></p>
-          <p>Follow us on social media for updates and inspiration.</p>
-        </div>
-      </div>
+      </section>
     </div>
   );
 }

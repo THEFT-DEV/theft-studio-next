@@ -36,83 +36,95 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const prevProject = allProjects[currentIndex - 1];
 
   return (
-    <article className="container mx-auto px-4 py-16 max-w-4xl">
-      {/* Back Link */}
-      <Link
-        href="/portfolio"
-        className="inline-flex items-center text-sm text-gray-600 hover:text-black mb-8"
-      >
-        ← Back to Portfolio
-      </Link>
+    <article className="min-h-screen">
+      <div className="container mx-auto px-6 py-16 md:py-24 max-w-5xl">
+        {/* Back Link */}
+        <Link
+          href="/portfolio"
+          className="inline-flex items-center text-sm font-light tracking-tight text-gray-600 hover:opacity-60 transition-opacity mb-12"
+        >
+          ← Back to Projects
+        </Link>
 
-      {/* Hero Image */}
-      <div className="aspect-video bg-gray-200 rounded-lg mb-8 relative overflow-hidden">
-        {project.thumbnail ? (
-          <Image
-            src={project.thumbnail}
-            alt={project.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-gray-400 text-2xl font-medium">
+        {/* Hero Image */}
+        {project.thumbnail && (
+          <div className="aspect-[16/10] bg-gray-100 mb-12 relative overflow-hidden">
+            <Image
+              src={project.thumbnail}
+              alt={project.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
+
+        {/* Meta */}
+        <div className="mb-16">
+          <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-6 leading-tight">
             {project.title}
+          </h1>
+          <div className="w-12 h-px bg-black mb-8"></div>
+          {project.excerpt && (
+            <p className="text-lg md:text-xl text-gray-600 font-light leading-relaxed mb-6">
+              {project.excerpt}
+            </p>
+          )}
+          <div className="flex gap-4 text-xs text-gray-500 font-light tracking-tight mb-6">
+            <time>{formatDate(project.date)}</time>
           </div>
-        )}
-      </div>
-
-      {/* Meta */}
-      <div className="mb-8">
-        <h1 className="text-5xl font-bold mb-4">{project.title}</h1>
-        <p className="text-xl text-gray-600 mb-4">{project.excerpt}</p>
-        <div className="flex gap-4 text-sm text-gray-500 mb-4">
-          <time>{formatDate(project.date)}</time>
+          {project.categories.length > 0 && (
+            <div className="flex gap-2 flex-wrap">
+              {project.categories.map((cat) => (
+                <span
+                  key={cat}
+                  className="px-3 py-1 border border-black/10 text-xs font-light tracking-tight"
+                >
+                  {cat}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
-        {project.categories.length > 0 && (
-          <div className="flex gap-2">
-            {project.categories.map((cat) => (
-              <span key={cat} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
-                {cat}
-              </span>
-            ))}
+
+        {/* Content */}
+        <div
+          className="prose prose-lg max-w-none mb-16 font-light leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: project.content }}
+        />
+
+        {/* Navigation */}
+        <div className="border-t border-black/10 pt-12 mt-24">
+          <div className="grid md:grid-cols-2 gap-8">
+            {prevProject ? (
+              <Link
+                href={`/portfolio/${prevProject.slug}`}
+                className="group"
+              >
+                <span className="text-xs text-gray-500 font-light tracking-tight mb-2 block">
+                  Previous Project
+                </span>
+                <h3 className="text-lg md:text-xl font-light tracking-tight group-hover:opacity-60 transition-opacity">
+                  {prevProject.title}
+                </h3>
+              </Link>
+            ) : (
+              <div />
+            )}
+            {nextProject && (
+              <Link
+                href={`/portfolio/${nextProject.slug}`}
+                className="group md:text-right"
+              >
+                <span className="text-xs text-gray-500 font-light tracking-tight mb-2 block">
+                  Next Project
+                </span>
+                <h3 className="text-lg md:text-xl font-light tracking-tight group-hover:opacity-60 transition-opacity">
+                  {nextProject.title}
+                </h3>
+              </Link>
+            )}
           </div>
-        )}
-      </div>
-
-      {/* Content */}
-      <div
-        className="prose prose-lg max-w-none mb-16"
-        dangerouslySetInnerHTML={{ __html: project.content }}
-      />
-
-      {/* Navigation */}
-      <div className="border-t pt-8 mt-16">
-        <div className="flex justify-between items-center">
-          {prevProject ? (
-            <Link
-              href={`/portfolio/${prevProject.slug}`}
-              className="group"
-            >
-              <span className="text-sm text-gray-500">Previous Project</span>
-              <h3 className="text-lg font-bold group-hover:text-blue-600 transition-colors">
-                {prevProject.title}
-              </h3>
-            </Link>
-          ) : (
-            <div />
-          )}
-          {nextProject && (
-            <Link
-              href={`/portfolio/${nextProject.slug}`}
-              className="group text-right"
-            >
-              <span className="text-sm text-gray-500">Next Project</span>
-              <h3 className="text-lg font-bold group-hover:text-blue-600 transition-colors">
-                {nextProject.title}
-              </h3>
-            </Link>
-          )}
         </div>
       </div>
     </article>
